@@ -2061,7 +2061,7 @@ pub struct Visual {
     pub map_entries: c_int,
 }
 
-#[derive(Debug, Clone, Copy, PartialEq)]
+#[derive(Debug, Default, Clone, Copy, PartialEq)]
 #[repr(C)]
 pub struct XArc {
     pub x: c_short,
@@ -2305,14 +2305,14 @@ pub struct XPixmapFormatValues {
     pub scanline_pad: c_int,
 }
 
-#[derive(Debug, Clone, Copy, PartialEq)]
+#[derive(Debug, Default, Clone, Copy, PartialEq)]
 #[repr(C)]
 pub struct XPoint {
     pub x: c_short,
     pub y: c_short,
 }
 
-#[derive(Debug, Clone, Copy, PartialEq)]
+#[derive(Debug, Default, Clone, Copy, PartialEq)]
 #[repr(C)]
 pub struct XRectangle {
     pub x: c_short,
